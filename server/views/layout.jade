@@ -1,0 +1,51 @@
+//- layout.jade
+doctype html
+html(lang="en")
+  head
+    block title
+      title Ask Dr Watson
+
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    link(rel="shortcut icon", href="/images/favicon.ico", type="image/x-icon")
+    link(rel="icon", href="/images/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="/css/watson-bootstrap-dark.css")
+    link(rel="stylesheet", href="/css/style.css")
+    block extrahead
+  body
+    block body-content
+      div.container
+        div.row
+          div.col-lg-12
+            div.row.top-nav
+              div.col-lg-12
+                a.left(href='http://www.tricedesigns.com/2015/07/13/voice-driven-native-mobile-apps-with-ibm-watson/') Learn more about this demo
+                a.right(href='http://www.tricedesigns.com/about/') About
+                a.right.fork(href='https://github.com/IBM-Bluemix/ask-dr-watson') Fork
+            div.row.header(style='padding-bottom:0px;border:none;')
+              div.avatar.img-container.col-lg-2.col-md-2.visible-lg.visible-md
+                img(src='/images/watson.gif')
+              div.col-lg-10.col-md-10
+                h2 Ask Dr. Watson
+                p "Ask Dr Watson" is a native iOS app that re-creates a Siri-like experience using the Watson Speech to Text and Question & Answer services, with operational analytics powered by the Advanced Mobile Access service on IBM Bluemix. The native iOS app allows you to ask Watson questions in spoken language, and receive textual responses based on the Watson QA Healthcare data set.
+                p You can access complete client and server source code for this sample at 
+                  a(href='https://github.com/IBM-Bluemix/ask-dr-watson') github.com/IBM-Bluemix/ask-dr-watson
+                
+      div.container
+        div.row
+          div.col-lg-12
+            div.row.header(style='padding-bottom:0px;')
+              div.col-lg-12.col-md-12
+                block row-content
+     
+    div.container.footer
+      div.row.text-center(style='margin:10px 0px 15px 0px;')
+        a(href="/tos") Terms of Use
+        |  | 
+        a(href="http://www.ibm.com/privacy/us/en/") Privacy Policy
+    script(type='text/javascript', src="/js/css_browser_selector.js")
+    script(type='text/javascript', src="/js/browser-detector.js")
+    script(type='text/javascript', src="/js/jquery-1.11.1.min.js")
+    script(type='text/javascript', src="/js/demo.js")

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="485"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="axK-d0-tK7">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="485"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ask Dr Watson" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+                    <rect key="frame" x="20" y="140" width="441" height="43"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="microphone-inactive.png" translatesAutoresizingMaskIntoConstraints="NO" id="hzE-tu-4v5">
+                    <rect key="frame" x="162" y="330" width="156" height="142"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="142" id="Beo-dn-V97"/>
+                        <constraint firstAttribute="width" constant="156" id="rd3-a3-3Wb"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hzE-tu-4v5" firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="I14-gz-jzU"/>
+                <constraint firstAttribute="bottom" secondItem="axK-d0-tK7" secondAttribute="bottom" id="JRk-SC-KKe"/>
+                <constraint firstAttribute="bottom" secondItem="hzE-tu-4v5" secondAttribute="bottom" constant="13" id="M32-tN-ui2"/>
+                <constraint firstAttribute="trailing" secondItem="axK-d0-tK7" secondAttribute="trailing" id="TyR-TY-cTw"/>
+                <constraint firstItem="axK-d0-tK7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eJ0-vP-7rv"/>
+                <constraint firstItem="axK-d0-tK7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="psw-K2-j4e"/>
+                <constraint firstItem="hzE-tu-4v5" firstAttribute="centerX" secondItem="axK-d0-tK7" secondAttribute="centerX" id="xSI-J3-lnt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="457.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background.jpg" width="1055" height="760"/>
+        <image name="microphone-inactive.png" width="400" height="394"/>
+    </resources>
+</document>

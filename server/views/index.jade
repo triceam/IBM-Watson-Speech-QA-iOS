@@ -1,0 +1,97 @@
+//- index.jade
+extends ./layout.jade
+
+block row-content
+  div.row
+    div.col-lg-12.col-lg-12.col-xs-12
+        p 
+        iframe(width='100%', height='400px', src='http://www.youtube.com/embed/Qtb09tDWldM', frameborder='0', allowfullscreen='allowfullscreen')
+ 
+  div.row
+    div.col-lg-12.col-lg-12.col-xs-12
+      p 
+      p The 
+        a(href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/question-answer.html") IBM Watson™ Question Answer (QA) service
+        |  provides an API that give you the power of the IBM Watson cognitive computing system.
+        |  With this service,
+        | you can connect to Watson, pose questions in natural language, and receive responses
+        | that you can use within your application.  The 
+        a(href='http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/speech-to-text.html') IBM Watson Speech To Text
+        |  service transcribes spoken language into text.
+      p In this sample, these services have been hooked together with the 
+        a(href='https://console.ng.bluemix.net/solutions/mobilefirst') MobileFirst 
+        | application services to create a native iOS app that enables the user ask questions in spoken language, Watson figures out the answer and returns it to the mobile client.
+      
+  div.row       
+    div.col-lg-12
+      h3 Asking Questions
+      p The Watson API is incredibly powerful, but this sample is designed using only the 
+        a(href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/qaapi/") public healthcare
+        |  data set, which is trained to only answer 
+        a(href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/qaapi/#corpora") specific kinds of questions. 
+      p Watson QA data corpora can be customized and created for any data set, however this requires system training and an engagement with IBM.  Only limited healthcare and travel copora are available for the free public data sets.        
+      
+  div.row
+    div.col-lg-6.col-md-6.col-xs-6
+      h3 Need some ideas?
+      ul
+        li
+          a(href="javascript:search('What are symptoms of Parkinsons disease?', true)") What are symptoms of Parkinson's disease?
+        li
+          a(href="javascript:search('What is Machado-Joseph Disease?', true)") What is Machado-Joseph Disease?
+        li
+          a(href="javascript:search('What causes Wilson Disease?', true)") What causes Wilson Disease?
+        li
+          a(href="javascript:search('What is the treatment for Autoimmune Hepatitis?', true)") What is the treatment for Autoimmune Hepatitis?
+        li
+          a(href="javascript:search('Am I at risk of a stroke?', true)") Am I at risk of a stroke?
+        li
+          a(href="javascript:search('What can I expect before heart surgery?', true)") What can I expect before heart surgery?
+        li
+          a(href="javascript:search('What can I expect after a colonoscopy?', true)") What can I expect after a colonoscopy?
+        li
+          a(href="javascript:search('What are the benefits of taking aspirin daily?', true)") What are the benefits of taking aspirin daily?
+          
+      h5 Conditional Questions
+        p
+          ul
+            li What is X?
+            li What causes X?
+            li What is the treatment for X?
+            li What are the symptoms of X?
+            li Am I at risk of X?
+      h5 Procedure Questions
+        p
+          ul
+            li What should I expect before X?
+            li What should I expect after X?
+      h5 General Health Questions
+        p
+          ul
+            li
+              a(href="javascript:search('What are the benefits of taking aspirin daily?', true)") What are the benefits of taking aspirin daily?
+            li
+              a(href="javascript:search('Why do I need to get shots?', true)") Why do I need to get shots?
+            li
+              a(href="javascript:search('How do I know if I have food poisoning?', true)") How do I know if I have food poisoning?
+      h5 Action-Related Questions
+        p
+          ul
+            li
+              a(href="javascript:search('How can I quit smoking?', true)") How can I quit smoking?
+            li
+              a(href="javascript:search('What should I do if my child is obese?', true)") What should I do if my child is obese?
+            li
+              a(href="javascript:search('What can I do to get more calcium?', true)") What can I do to get more calcium?
+    div.col-lg-6.col-md-6.col-xs-6
+      div.sampleWrapper
+        div.sample
+          h3#questionText Select a question to the left to see a sample result.
+          div#response
+  
+  
+  div.row
+    div.col-lg-12
+      p &nbsp;
+
+  

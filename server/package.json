@@ -1,0 +1,31 @@
+{
+  "name": "AskDrWatsonStarterApp",
+  "version": "0.1.5",
+  "description": "A native iOS app that re-creates a Siri-like experience using the Watson Speech to Text and Question & Answer services, with operational analytics powered by the Advanced Mobile Access service on IBM Bluemix. The native iOS app allows you to ask Watson questions in spoken language, and receive textual responses based on the Watson QA Healthcare data set.",
+  "dependencies": {
+    "multer": "~0.1.8",
+    "body-parser": "~1.10.0",
+    "errorhandler": "~1.3.2",
+    "express": "~4.11.1",
+    "jade": "~1.9.1",
+    "ua-parser-js": "~0.7.3",
+    "watson-developer-cloud": "~0.9.8",
+    "cf-deployment-tracker-client": "*"
+  },
+  "engines": {
+    "node": ">=0.10.36"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IBM-Bluemix/ask-dr-watson.git"
+  },
+  "author": "Andrew M. Trice",
+  "contributors": [],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/IBM-Bluemix/ask-dr-watson/issues"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
