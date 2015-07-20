@@ -1,11 +1,11 @@
 # Overview
-"Ask Dr Watson" is a native iOS app that re-creates a Siri-like experience using the [Watson Speech to Text][watson_stt_url] and [Question &amp; Answer][watson_qa_url] services, with operational analytics powered by the [Advanced Mobile Access][ama_url] service on [IBM Bluemix][bluemix_signup_url]. The native iOS app allows you to ask Watson questions in spoken language, and receive textual responses based on the [Watson QA Healthcare data set][watson_healthcare_url].
+"IBM Watson Speech QA - iOS" is a native iOS app that creates a voice driven app experience using the [Speech to Text][watson_stt_url] and [Question &amp; Answer][watson_qa_url] services, with operational analytics powered by the [Advanced Mobile Access][ama_url] service on [IBM Bluemix][bluemix_signup_url]. The native iOS app allows you to ask Watson questions in spoken language, and receive textual responses based on the [Watson QA Healthcare data set][watson_healthcare_url].
 
 This app is meant to serve as a demo to showcase how you could integrate IBM Watson, IBM Bluemix, or IBM MobileFirst solutions into your mobile applications.
 
 You can see a preview of this app in action and a brieft walkthrough of the code in the following video preview: 
 
-[https://youtu.be/0kedhwC3ikY][youtube_video_snip_url]
+[https://youtu.be/rywvlomIzIg][youtube_video_snip_url]
 
 [<img src="./github_content/video.jpg" width="100%">][youtube_video_snip_url]<br/>
 
@@ -14,7 +14,7 @@ You can see a preview of this app in action and a brieft walkthrough of the code
 ### Bluemix Services Used
 
 1. [Advanced Mobile Access][ama_url] - Capture analytics and logs from mobile apps running on devices
-2. [Watson Speech to Text][watson_stt_url] - Convert spoken audio into text
+2. [Speech to Text][watson_stt_url] - Convert spoken audio into text
 3. [Question &amp; Answer][watson_qa_url] - Natural language search 
 
 ### Architecture Diagram
@@ -25,9 +25,9 @@ This an architectural overview of the components that make this app run.
 	
 The mobile application connects to the [Advanced Mobile Access][ama_url] service to provide operational analytics (usage, devices, network utilization) and remote log collection from the client app on the mobile devices.
 
-The app communicates to the [Watson Speech to Text][watson_stt_url] and [Question &amp; Answer][watson_qa_url] servies through the Node.js middelware tier.  
+The app communicates to the [Speech to Text][watson_stt_url] and [Question &amp; Answer][watson_qa_url] servies through the Node.js middelware tier.  
 
-For the Speech To Text service, the app records audio from the local device, and sends a WAV file to the Node.js in a HTTP post request.  The Node.js tier then delegates to the Watson Speech To Text service to provide transcription capabilities.  The Node.js tier then formats the respons JSON object and returns the query to the mobile app.  
+For the Speech To Text service, the app records audio from the local device, and sends a WAV file to the Node.js in a HTTP post request.  The Node.js tier then delegates to the Speech To Text service to provide transcription capabilities.  The Node.js tier then formats the respons JSON object and returns the query to the mobile app.  
 
 For the QA service, the app makes an HTTP GET request (containing the query string) to the Node.js server, which delegates to the Watson QA natural language processing service to return search results. The Node.js tier then formats the respons JSON object and returns the query to the mobile app. 
 
@@ -70,17 +70,17 @@ There are two ways that you can configure the back-end Bluemix application.  You
   ```
   ---
 	applications:
-	- name: Ask-Dr-Watson-App
+	- name: iOS-Ask-Watson-App
       framework: node
       runtime: node12
 	  memory: 512M
 	  instances: 1
-	  host: ask-dr-watson-App
+	  host: ios-ask-watson-App
 	  domain: mybluemix.net
 	  services:
-	  - drwatson-advanced-mobile-access
-	  - drwatson-speech-to-text
-	  - drwatson-qa
+	  - askwatson-advanced-mobile-access
+	  - askwatson-speech-to-text
+	  - askwatson-qa
   ```
   The host you use will determine your application url initially, e.g. `<application-host>.mybluemix.net`.   Remember this, you will need it later.
 
@@ -93,12 +93,12 @@ There are two ways that you can configure the back-end Bluemix application.  You
   $ cf login
   ```
 
-7. Create the Advanced Mobile Access, Watson QA, and Watson Speech To Text services on Bluemix.
+7. Create the Advanced Mobile Access, Watson QA, and Speech To Text services on Bluemix.
 
   ```
-  $ cf create-service AdvancedMobileAccess Bronze drwatson-advanced-mobile-access
-  $ cf create-service question_and_answer question_and_answer_free_plan drwatson-qa
-  $ cf create-service speech_to_text standard drwatson-speech-to-text
+  $ cf create-service AdvancedMobileAccess Bronze askwatson-advanced-mobile-access
+  $ cf create-service question_and_answer question_and_answer_free_plan askwatson-qa
+  $ cf create-service speech_to_text standard askwatson-speech-to-text
   ```
 
 8. Push it to Bluemix. This will automatically deploy the back end app and start the Node.js instance.
@@ -209,7 +209,7 @@ To troubleshoot your the server side of your Bluemix app the main useful source 
 
 ### Privacy Notice
 
-The Ask Dr Watson backend Node.js application includes code to track deployments to Bluemix and other Cloud Foundry platforms. The following information is sent to a [Deployment Tracker] [deploy_track_url] service on each deployment:
+The IBM Watson Speech QA - iOS backend Node.js application includes code to track deployments to Bluemix and other Cloud Foundry platforms. The following information is sent to a [Deployment Tracker] [deploy_track_url] service on each deployment:
 
 * Application Name (`application_name`)
 * Space ID (`space_id`)
@@ -234,5 +234,5 @@ Deployment tracking can be disabled by removing `require("cf-deployment-tracker-
 [watson_stt_url]: https://ibm.biz/Watson-STT
 [watson_healthcare_url]: http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/qaapi/corpora.shtml#healthcare
 [youtube_video_url]: http://www.youtube.com/watch?v=0kedhwC3ikY
-[youtube_video_snip_url]: https://ibm.biz/BdX8gb
+[youtube_video_snip_url]: https://ibm.biz/BdXh3E
 [data_coropora_url]: http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/qaapi/#corpora

@@ -1,7 +1,7 @@
 {
-  "name": "AskDrWatsonStarterApp",
+  "name": "iOSWatsonStarterApp",
   "version": "0.1.5",
-  "description": "A native iOS app that re-creates a Siri-like experience using the Watson Speech to Text and Question & Answer services, with operational analytics powered by the Advanced Mobile Access service on IBM Bluemix. The native iOS app allows you to ask Watson questions in spoken language, and receive textual responses based on the Watson QA Healthcare data set.",
+  "description": "A native iOS app that creates a voice driven app experience using the Speech to Text and Question & Answer services, with operational analytics powered by the Advanced Mobile Access service on IBM Bluemix. The native iOS app allows you to ask Watson questions in spoken language, and receive textual responses based on the Watson QA Healthcare data set.",
   "dependencies": {
     "multer": "~0.1.8",
     "body-parser": "~1.10.0",
