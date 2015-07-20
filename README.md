@@ -60,7 +60,7 @@ There are two ways that you can configure the back-end Bluemix application.  You
 3. Clone the app to your local environment from your terminal using the following command
 
   ```
-  git clone https://github.com/IBM-Bluemix/ask-dr-watson.git
+  git clone https://github.com/triceam/IBM-Watson-Speech-QA-iOS.git
   ```
 
 4. cd into this newly created directory, then go into the /server directory.
