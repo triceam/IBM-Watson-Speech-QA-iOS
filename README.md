@@ -1,4 +1,4 @@
-# Overview
+# IBM Watson Speech QA for iOS
 "IBM Watson Speech QA for iOS" is a native iOS app that creates a voice driven app experience using the [Speech to Text][watson_stt_url] and [Question &amp; Answer][watson_qa_url] services, with operational analytics powered by the [Advanced Mobile Access][ama_url] service on [IBM Bluemix][bluemix_signup_url]. The native iOS app allows you to ask Watson questions in spoken language, and receive textual responses based on the [Watson QA Healthcare data set][watson_healthcare_url].
 
 This app is meant to serve as a demo to showcase how you could integrate IBM Watson, IBM Bluemix, or IBM MobileFirst solutions into your mobile applications.
