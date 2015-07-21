@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>Backend_GUID</key>
-	<string>put your AMA GUID here</string>
+	<string>you AMA UID goes here</string>
 	<key>Backend_Route</key>
-	<string>https://yourapp.mybluemix.net</string>
+	<string>your app route goes here</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.tricedesigns.DrWatson</string>
+	<string>com.tricedesigns.WasonSpeechQA</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Ask Watson</string>
+	<string>Watson Speech QA</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

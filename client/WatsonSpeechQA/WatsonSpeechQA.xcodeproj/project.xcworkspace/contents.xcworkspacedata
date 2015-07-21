@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DrWatson.xcodeproj">
+      location = "self:WatsonSpeechQA.xcodeproj">
    </FileRef>
 </Workspace>

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DrWatson.xcscheme</key>
+		<key>WatsonSpeechQA.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5DF835A61B2F50790009DFF0</key>
+		<key>5D89DBD41B5DD28F0048DED1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5DF835BF1B2F50790009DFF0</key>
+		<key>5D89DBED1B5DD28F0048DED1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

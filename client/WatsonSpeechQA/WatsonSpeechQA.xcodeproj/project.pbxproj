@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D89DBDB1B5DD28F0048DED1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D89DBDA1B5DD28F0048DED1 /* main.m */; };
+		5D89DBDE1B5DD28F0048DED1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D89DBDD1B5DD28F0048DED1 /* AppDelegate.m */; };
+		5D89DBE11B5DD28F0048DED1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D89DBE01B5DD28F0048DED1 /* ViewController.m */; };
+		5D89DBE41B5DD28F0048DED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D89DBE21B5DD28F0048DED1 /* Main.storyboard */; };
+		5D89DBE61B5DD28F0048DED1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D89DBE51B5DD28F0048DED1 /* Images.xcassets */; };
+		5D89DBE91B5DD28F0048DED1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D89DBE71B5DD28F0048DED1 /* LaunchScreen.xib */; };
+		5D89DBF51B5DD2900048DED1 /* WatsonSpeechQATests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D89DBF41B5DD2900048DED1 /* WatsonSpeechQATests.m */; };
+		5D89DC051B5DD5BF0048DED1 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D89DBFF1B5DD5BF0048DED1 /* background.jpg */; };
+		5D89DC061B5DD5BF0048DED1 /* icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D89DC001B5DD5BF0048DED1 /* icon-60.png */; };
+		5D89DC071B5DD5BF0048DED1 /* icon-90.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D89DC011B5DD5BF0048DED1 /* icon-90.png */; };
+		5D89DC081B5DD5BF0048DED1 /* icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D89DC021B5DD5BF0048DED1 /* icon-120.png */; };
+		5D89DC091B5DD5BF0048DED1 /* icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D89DC031B5DD5BF0048DED1 /* icon-152.png */; };
+		5D89DC0A1B5DD5BF0048DED1 /* icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D89DC041B5DD5BF0048DED1 /* icon-180.png */; };
+		5D89DC0E1B5DD6580048DED1 /* microphone-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D89DC0B1B5DD6580048DED1 /* microphone-inactive.png */; };
+		5D89DC0F1B5DD6580048DED1 /* microphone-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D89DC0C1B5DD6580048DED1 /* microphone-white.png */; };
+		5D89DC101B5DD6580048DED1 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D89DC0D1B5DD6580048DED1 /* microphone.png */; };
+		5D89DC171B5DD6B90048DED1 /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D89DC121B5DD6B90048DED1 /* ResultsTableViewController.m */; };
+		5D89DC181B5DD6B90048DED1 /* SearchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D89DC141B5DD6B90048DED1 /* SearchResultTableViewCell.m */; };
+		5D89DC191B5DD6B90048DED1 /* SpeechManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D89DC161B5DD6B90048DED1 /* SpeechManager.m */; };
+		F9B3EDB0FACC0AFBA5394BAB /* libPods-WatsonSpeechQA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A58B424CDEDF0416CD096C33 /* libPods-WatsonSpeechQA.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D89DBEF1B5DD28F0048DED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D89DBCD1B5DD28F0048DED1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D89DBD41B5DD28F0048DED1;
+			remoteInfo = WatsonSpeechQA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11ED5F7394E1DB269F1296A5 /* Pods-WatsonSpeechQA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonSpeechQA.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatsonSpeechQA/Pods-WatsonSpeechQA.release.xcconfig"; sourceTree = "<group>"; };
+		5D89DBD51B5DD28F0048DED1 /* WatsonSpeechQA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonSpeechQA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D89DBD91B5DD28F0048DED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D89DBDA1B5DD28F0048DED1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D89DBDC1B5DD28F0048DED1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5D89DBDD1B5DD28F0048DED1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5D89DBDF1B5DD28F0048DED1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5D89DBE01B5DD28F0048DED1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5D89DBE31B5DD28F0048DED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D89DBE51B5DD28F0048DED1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5D89DBE81B5DD28F0048DED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5D89DBEE1B5DD28F0048DED1 /* WatsonSpeechQATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatsonSpeechQATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D89DBF31B5DD2900048DED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D89DBF41B5DD2900048DED1 /* WatsonSpeechQATests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatsonSpeechQATests.m; sourceTree = "<group>"; };
+		5D89DBFF1B5DD5BF0048DED1 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = Images.xcassets/background.jpg; sourceTree = "<group>"; };
+		5D89DC001B5DD5BF0048DED1 /* icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-60.png"; path = "Images.xcassets/icon-60.png"; sourceTree = "<group>"; };
+		5D89DC011B5DD5BF0048DED1 /* icon-90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-90.png"; path = "Images.xcassets/icon-90.png"; sourceTree = "<group>"; };
+		5D89DC021B5DD5BF0048DED1 /* icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-120.png"; path = "Images.xcassets/icon-120.png"; sourceTree = "<group>"; };
+		5D89DC031B5DD5BF0048DED1 /* icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-152.png"; path = "Images.xcassets/icon-152.png"; sourceTree = "<group>"; };
+		5D89DC041B5DD5BF0048DED1 /* icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-180.png"; path = "Images.xcassets/icon-180.png"; sourceTree = "<group>"; };
+		5D89DC0B1B5DD6580048DED1 /* microphone-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "microphone-inactive.png"; path = "Images.xcassets/microphone-inactive.png"; sourceTree = "<group>"; };
+		5D89DC0C1B5DD6580048DED1 /* microphone-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "microphone-white.png"; path = "Images.xcassets/microphone-white.png"; sourceTree = "<group>"; };
+		5D89DC0D1B5DD6580048DED1 /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = microphone.png; path = Images.xcassets/microphone.png; sourceTree = "<group>"; };
+		5D89DC111B5DD6B90048DED1 /* ResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTableViewController.h; sourceTree = "<group>"; };
+		5D89DC121B5DD6B90048DED1 /* ResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTableViewController.m; sourceTree = "<group>"; };
+		5D89DC131B5DD6B90048DED1 /* SearchResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultTableViewCell.h; sourceTree = "<group>"; };
+		5D89DC141B5DD6B90048DED1 /* SearchResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultTableViewCell.m; sourceTree = "<group>"; };
+		5D89DC151B5DD6B90048DED1 /* SpeechManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechManager.h; sourceTree = "<group>"; };
+		5D89DC161B5DD6B90048DED1 /* SpeechManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechManager.m; sourceTree = "<group>"; };
+		A58B424CDEDF0416CD096C33 /* libPods-WatsonSpeechQA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatsonSpeechQA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12840A8A78758E9244FCCAF /* Pods-WatsonSpeechQA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonSpeechQA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatsonSpeechQA/Pods-WatsonSpeechQA.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D89DBD21B5DD28F0048DED1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B3EDB0FACC0AFBA5394BAB /* libPods-WatsonSpeechQA.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D89DBEB1B5DD28F0048DED1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		357652B86532A2E8899C1C0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B12840A8A78758E9244FCCAF /* Pods-WatsonSpeechQA.debug.xcconfig */,
+				11ED5F7394E1DB269F1296A5 /* Pods-WatsonSpeechQA.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D89DBCC1B5DD28F0048DED1 = {
+			isa = PBXGroup;
+			children = (
+				5D89DBD71B5DD28F0048DED1 /* WatsonSpeechQA */,
+				5D89DBF11B5DD2900048DED1 /* WatsonSpeechQATests */,
+				5D89DBD61B5DD28F0048DED1 /* Products */,
+				357652B86532A2E8899C1C0F /* Pods */,
+				70DFA1B29B4923076E6685E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5D89DBD61B5DD28F0048DED1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D89DBD51B5DD28F0048DED1 /* WatsonSpeechQA.app */,
+				5D89DBEE1B5DD28F0048DED1 /* WatsonSpeechQATests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D89DBD71B5DD28F0048DED1 /* WatsonSpeechQA */ = {
+			isa = PBXGroup;
+			children = (
+				5D89DC111B5DD6B90048DED1 /* ResultsTableViewController.h */,
+				5D89DC121B5DD6B90048DED1 /* ResultsTableViewController.m */,
+				5D89DC131B5DD6B90048DED1 /* SearchResultTableViewCell.h */,
+				5D89DC141B5DD6B90048DED1 /* SearchResultTableViewCell.m */,
+				5D89DC151B5DD6B90048DED1 /* SpeechManager.h */,
+				5D89DC161B5DD6B90048DED1 /* SpeechManager.m */,
+				5D89DBFE1B5DD59E0048DED1 /* Images */,
+				5D89DBDC1B5DD28F0048DED1 /* AppDelegate.h */,
+				5D89DBDD1B5DD28F0048DED1 /* AppDelegate.m */,
+				5D89DBDF1B5DD28F0048DED1 /* ViewController.h */,
+				5D89DBE01B5DD28F0048DED1 /* ViewController.m */,
+				5D89DBE21B5DD28F0048DED1 /* Main.storyboard */,
+				5D89DBE51B5DD28F0048DED1 /* Images.xcassets */,
+				5D89DBE71B5DD28F0048DED1 /* LaunchScreen.xib */,
+				5D89DBD81B5DD28F0048DED1 /* Supporting Files */,
+			);
+			path = WatsonSpeechQA;
+			sourceTree = "<group>";
+		};
+		5D89DBD81B5DD28F0048DED1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D89DBD91B5DD28F0048DED1 /* Info.plist */,
+				5D89DBDA1B5DD28F0048DED1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D89DBF11B5DD2900048DED1 /* WatsonSpeechQATests */ = {
+			isa = PBXGroup;
+			children = (
+				5D89DBF41B5DD2900048DED1 /* WatsonSpeechQATests.m */,
+				5D89DBF21B5DD2900048DED1 /* Supporting Files */,
+			);
+			path = WatsonSpeechQATests;
+			sourceTree = "<group>";
+		};
+		5D89DBF21B5DD2900048DED1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D89DBF31B5DD2900048DED1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D89DBFE1B5DD59E0048DED1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5D89DC0B1B5DD6580048DED1 /* microphone-inactive.png */,
+				5D89DC0C1B5DD6580048DED1 /* microphone-white.png */,
+				5D89DC0D1B5DD6580048DED1 /* microphone.png */,
+				5D89DBFF1B5DD5BF0048DED1 /* background.jpg */,
+				5D89DC001B5DD5BF0048DED1 /* icon-60.png */,
+				5D89DC011B5DD5BF0048DED1 /* icon-90.png */,
+				5D89DC021B5DD5BF0048DED1 /* icon-120.png */,
+				5D89DC031B5DD5BF0048DED1 /* icon-152.png */,
+				5D89DC041B5DD5BF0048DED1 /* icon-180.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		70DFA1B29B4923076E6685E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A58B424CDEDF0416CD096C33 /* libPods-WatsonSpeechQA.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D89DBD41B5DD28F0048DED1 /* WatsonSpeechQA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D89DBF81B5DD2900048DED1 /* Build configuration list for PBXNativeTarget "WatsonSpeechQA" */;
+			buildPhases = (
+				6E118A2CA9EFA8E61482FB10 /* Check Pods Manifest.lock */,
+				5D89DBD11B5DD28F0048DED1 /* Sources */,
+				5D89DBD21B5DD28F0048DED1 /* Frameworks */,
+				5D89DBD31B5DD28F0048DED1 /* Resources */,
+				70810758CE0E52C0469CE213 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatsonSpeechQA;
+			productName = WatsonSpeechQA;
+			productReference = 5D89DBD51B5DD28F0048DED1 /* WatsonSpeechQA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D89DBED1B5DD28F0048DED1 /* WatsonSpeechQATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D89DBFB1B5DD2900048DED1 /* Build configuration list for PBXNativeTarget "WatsonSpeechQATests" */;
+			buildPhases = (
+				5D89DBEA1B5DD28F0048DED1 /* Sources */,
+				5D89DBEB1B5DD28F0048DED1 /* Frameworks */,
+				5D89DBEC1B5DD28F0048DED1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D89DBF01B5DD28F0048DED1 /* PBXTargetDependency */,
+			);
+			name = WatsonSpeechQATests;
+			productName = WatsonSpeechQATests;
+			productReference = 5D89DBEE1B5DD28F0048DED1 /* WatsonSpeechQATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D89DBCD1B5DD28F0048DED1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Andrew Trice";
+				TargetAttributes = {
+					5D89DBD41B5DD28F0048DED1 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					5D89DBED1B5DD28F0048DED1 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 5D89DBD41B5DD28F0048DED1;
+					};
+				};
+			};
+			buildConfigurationList = 5D89DBD01B5DD28F0048DED1 /* Build configuration list for PBXProject "WatsonSpeechQA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D89DBCC1B5DD28F0048DED1;
+			productRefGroup = 5D89DBD61B5DD28F0048DED1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D89DBD41B5DD28F0048DED1 /* WatsonSpeechQA */,
+				5D89DBED1B5DD28F0048DED1 /* WatsonSpeechQATests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D89DBD31B5DD28F0048DED1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D89DBE41B5DD28F0048DED1 /* Main.storyboard in Resources */,
+				5D89DC081B5DD5BF0048DED1 /* icon-120.png in Resources */,
+				5D89DC0A1B5DD5BF0048DED1 /* icon-180.png in Resources */,
+				5D89DC051B5DD5BF0048DED1 /* background.jpg in Resources */,
+				5D89DBE91B5DD28F0048DED1 /* LaunchScreen.xib in Resources */,
+				5D89DBE61B5DD28F0048DED1 /* Images.xcassets in Resources */,
+				5D89DC0E1B5DD6580048DED1 /* microphone-inactive.png in Resources */,
+				5D89DC091B5DD5BF0048DED1 /* icon-152.png in Resources */,
+				5D89DC061B5DD5BF0048DED1 /* icon-60.png in Resources */,
+				5D89DC101B5DD6580048DED1 /* microphone.png in Resources */,
+				5D89DC0F1B5DD6580048DED1 /* microphone-white.png in Resources */,
+				5D89DC071B5DD5BF0048DED1 /* icon-90.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D89DBEC1B5DD28F0048DED1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E118A2CA9EFA8E61482FB10 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70810758CE0E52C0469CE213 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WatsonSpeechQA/Pods-WatsonSpeechQA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D89DBD11B5DD28F0048DED1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D89DC171B5DD6B90048DED1 /* ResultsTableViewController.m in Sources */,
+				5D89DBE11B5DD28F0048DED1 /* ViewController.m in Sources */,
+				5D89DBDE1B5DD28F0048DED1 /* AppDelegate.m in Sources */,
+				5D89DBDB1B5DD28F0048DED1 /* main.m in Sources */,
+				5D89DC181B5DD6B90048DED1 /* SearchResultTableViewCell.m in Sources */,
+				5D89DC191B5DD6B90048DED1 /* SpeechManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D89DBEA1B5DD28F0048DED1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D89DBF51B5DD2900048DED1 /* WatsonSpeechQATests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D89DBF01B5DD28F0048DED1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D89DBD41B5DD28F0048DED1 /* WatsonSpeechQA */;
+			targetProxy = 5D89DBEF1B5DD28F0048DED1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D89DBE21B5DD28F0048DED1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D89DBE31B5DD28F0048DED1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D89DBE71B5DD28F0048DED1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D89DBE81B5DD28F0048DED1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D89DBF61B5DD2900048DED1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D89DBF71B5DD2900048DED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D89DBF91B5DD2900048DED1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B12840A8A78758E9244FCCAF /* Pods-WatsonSpeechQA.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatsonSpeechQA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5D89DBFA1B5DD2900048DED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11ED5F7394E1DB269F1296A5 /* Pods-WatsonSpeechQA.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WatsonSpeechQA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5D89DBFC1B5DD2900048DED1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WatsonSpeechQATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatsonSpeechQA.app/WatsonSpeechQA";
+			};
+			name = Debug;
+		};
+		5D89DBFD1B5DD2900048DED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WatsonSpeechQATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatsonSpeechQA.app/WatsonSpeechQA";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D89DBD01B5DD28F0048DED1 /* Build configuration list for PBXProject "WatsonSpeechQA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D89DBF61B5DD2900048DED1 /* Debug */,
+				5D89DBF71B5DD2900048DED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D89DBF81B5DD2900048DED1 /* Build configuration list for PBXNativeTarget "WatsonSpeechQA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D89DBF91B5DD2900048DED1 /* Debug */,
+				5D89DBFA1B5DD2900048DED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D89DBFB1B5DD2900048DED1 /* Build configuration list for PBXNativeTarget "WatsonSpeechQATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D89DBFC1B5DD2900048DED1 /* Debug */,
+				5D89DBFD1B5DD2900048DED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D89DBCD1B5DD28F0048DED1 /* Project object */;
+}

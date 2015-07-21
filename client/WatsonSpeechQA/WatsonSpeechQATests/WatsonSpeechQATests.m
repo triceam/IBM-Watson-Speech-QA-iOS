@@ -1,19 +1,19 @@
 //
-//  DrWatsonTests.m
-//  DrWatsonTests
+//  WatsonSpeechQATests.m
+//  WatsonSpeechQATests
 //
-//  Created by Andrew Trice on 6/15/15.
+//  Created by Andrew Trice on 7/20/15.
 //  Copyright (c) 2015 Andrew Trice. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface DrWatsonTests : XCTestCase
+@interface WatsonSpeechQATests : XCTestCase
 
 @end
 
-@implementation DrWatsonTests
+@implementation WatsonSpeechQATests
 
 - (void)setUp {
     [super setUp];
