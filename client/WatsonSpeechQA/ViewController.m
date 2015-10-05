@@ -92,7 +92,7 @@
         NSMutableDictionary *recordSettings = [[NSMutableDictionary alloc] initWithCapacity:10];
         
         [recordSettings setObject:[NSNumber numberWithInt: kAudioFormatLinearPCM] forKey: AVFormatIDKey];
-        [recordSettings setObject:[NSNumber numberWithFloat:16000.0] forKey: AVSampleRateKey];
+        [recordSettings setObject:[NSNumber numberWithFloat:8000.0] forKey: AVSampleRateKey];
         [recordSettings setObject:[NSNumber numberWithInt:1] forKey:AVNumberOfChannelsKey];
         [recordSettings setObject:[NSNumber numberWithInt:16] forKey:AVLinearPCMBitDepthKey];
         [recordSettings setObject:[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsBigEndianKey];
