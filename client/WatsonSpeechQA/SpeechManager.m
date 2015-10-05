@@ -61,7 +61,7 @@
             AVSpeechUtterance *utterance = [AVSpeechUtterance
                                             speechUtteranceWithString:[sentences objectAtIndex:i]];
             
-            utterance.rate = 0.22;
+            utterance.rate = 0.5;
             utterance.preUtteranceDelay = 0.0;
             utterance.volume = 1.0;
             
