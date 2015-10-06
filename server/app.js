@@ -83,7 +83,7 @@ app.post('/transcribe', function(req, res){
     
     var params = {
         audio:readStream,
-        content_type:'audio/l16; rate=8000; channels=1',
+        content_type:'audio/l16; rate=16000; channels=1',
         continuous:"true"
     };
          
