@@ -21,6 +21,7 @@
     
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 64.0;
+    [self setTitle:self.query];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -26,6 +26,17 @@
 		5D89DC171B5DD6B90048DED1 /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D89DC121B5DD6B90048DED1 /* ResultsTableViewController.m */; };
 		5D89DC181B5DD6B90048DED1 /* SearchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D89DC141B5DD6B90048DED1 /* SearchResultTableViewCell.m */; };
 		5D89DC191B5DD6B90048DED1 /* SpeechManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D89DC161B5DD6B90048DED1 /* SpeechManager.m */; };
+		5DC4E4431BCEB8C300C843D2 /* icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DC4E4421BCEB8C300C843D2 /* icon-76.png */; settings = {ASSET_TAGS = (); }; };
+		5DC4E4451BCEB8CD00C843D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC4E4441BCEB8CD00C843D2 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		5DC4E44D1BD6E5E000C843D2 /* watsonsdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC4E44C1BD6E5E000C843D2 /* watsonsdk.framework */; settings = {ASSET_TAGS = (); }; };
+		5DC4E44F1BD6E5F600C843D2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC4E44E1BD6E5F600C843D2 /* CFNetwork.framework */; };
+		5DC4E4511BD6E5FC00C843D2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC4E4501BD6E5FC00C843D2 /* AudioToolbox.framework */; };
+		5DC4E4531BD6E60300C843D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC4E4521BD6E60300C843D2 /* AVFoundation.framework */; };
+		5DC4E4551BD6E60C00C843D2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC4E4541BD6E60C00C843D2 /* QuartzCore.framework */; };
+		5DC4E4571BD6E61400C843D2 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC4E4561BD6E61400C843D2 /* CoreAudio.framework */; };
+		5DC4E4591BD6E61A00C843D2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC4E4581BD6E61A00C843D2 /* Security.framework */; };
+		5DC4E45B1BD6E62800C843D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC4E45A1BD6E62800C843D2 /* Foundation.framework */; };
+		5DC4E45D1BD6E78800C843D2 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC4E45C1BD6E78800C843D2 /* libicucore.A.dylib */; };
 		F9B3EDB0FACC0AFBA5394BAB /* libPods-WatsonSpeechQA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A58B424CDEDF0416CD096C33 /* libPods-WatsonSpeechQA.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +80,18 @@
 		5D89DC141B5DD6B90048DED1 /* SearchResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultTableViewCell.m; sourceTree = "<group>"; };
 		5D89DC151B5DD6B90048DED1 /* SpeechManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechManager.h; sourceTree = "<group>"; };
 		5D89DC161B5DD6B90048DED1 /* SpeechManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechManager.m; sourceTree = "<group>"; };
+		5DC4E4411BCEB05300C843D2 /* WatsonSpeechQA copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WatsonSpeechQA copy-Info.plist"; path = "/Users/andrewtrice/Documents/dev/drWatson/Watson-SpeechKit/MobileFirst/client/WatsonSpeechQA/WatsonSpeechQA copy-Info.plist"; sourceTree = "<absolute>"; };
+		5DC4E4421BCEB8C300C843D2 /* icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-76.png"; path = "Images.xcassets/icon-76.png"; sourceTree = "<group>"; };
+		5DC4E4441BCEB8CD00C843D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5DC4E44C1BD6E5E000C843D2 /* watsonsdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = watsonsdk.framework; path = Frameworks/watsonsdk.framework; sourceTree = "<group>"; };
+		5DC4E44E1BD6E5F600C843D2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5DC4E4501BD6E5FC00C843D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5DC4E4521BD6E60300C843D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5DC4E4541BD6E60C00C843D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5DC4E4561BD6E61400C843D2 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		5DC4E4581BD6E61A00C843D2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5DC4E45A1BD6E62800C843D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5DC4E45C1BD6E78800C843D2 /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = ../../../../../../../../../usr/lib/libicucore.A.dylib; sourceTree = "<group>"; };
 		A58B424CDEDF0416CD096C33 /* libPods-WatsonSpeechQA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatsonSpeechQA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B12840A8A78758E9244FCCAF /* Pods-WatsonSpeechQA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatsonSpeechQA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatsonSpeechQA/Pods-WatsonSpeechQA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +101,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DC4E45D1BD6E78800C843D2 /* libicucore.A.dylib in Frameworks */,
+				5DC4E45B1BD6E62800C843D2 /* Foundation.framework in Frameworks */,
+				5DC4E4591BD6E61A00C843D2 /* Security.framework in Frameworks */,
+				5DC4E4571BD6E61400C843D2 /* CoreAudio.framework in Frameworks */,
+				5DC4E4551BD6E60C00C843D2 /* QuartzCore.framework in Frameworks */,
+				5DC4E4531BD6E60300C843D2 /* AVFoundation.framework in Frameworks */,
+				5DC4E4511BD6E5FC00C843D2 /* AudioToolbox.framework in Frameworks */,
+				5DC4E44F1BD6E5F600C843D2 /* CFNetwork.framework in Frameworks */,
 				F9B3EDB0FACC0AFBA5394BAB /* libPods-WatsonSpeechQA.a in Frameworks */,
+				5DC4E44D1BD6E5E000C843D2 /* watsonsdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +141,7 @@
 				5D89DBD61B5DD28F0048DED1 /* Products */,
 				357652B86532A2E8899C1C0F /* Pods */,
 				70DFA1B29B4923076E6685E6 /* Frameworks */,
+				5DC4E4411BCEB05300C843D2 /* WatsonSpeechQA copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,11 +205,13 @@
 		5D89DBFE1B5DD59E0048DED1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5DC4E4441BCEB8CD00C843D2 /* Images.xcassets */,
 				5D89DC0B1B5DD6580048DED1 /* microphone-inactive.png */,
 				5D89DC0C1B5DD6580048DED1 /* microphone-white.png */,
 				5D89DC0D1B5DD6580048DED1 /* microphone.png */,
 				5D89DBFF1B5DD5BF0048DED1 /* background.jpg */,
 				5D89DC001B5DD5BF0048DED1 /* icon-60.png */,
+				5DC4E4421BCEB8C300C843D2 /* icon-76.png */,
 				5D89DC011B5DD5BF0048DED1 /* icon-90.png */,
 				5D89DC021B5DD5BF0048DED1 /* icon-120.png */,
 				5D89DC031B5DD5BF0048DED1 /* icon-152.png */,
@@ -188,6 +223,15 @@
 		70DFA1B29B4923076E6685E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5DC4E45C1BD6E78800C843D2 /* libicucore.A.dylib */,
+				5DC4E45A1BD6E62800C843D2 /* Foundation.framework */,
+				5DC4E4581BD6E61A00C843D2 /* Security.framework */,
+				5DC4E4561BD6E61400C843D2 /* CoreAudio.framework */,
+				5DC4E4541BD6E60C00C843D2 /* QuartzCore.framework */,
+				5DC4E4521BD6E60300C843D2 /* AVFoundation.framework */,
+				5DC4E4501BD6E5FC00C843D2 /* AudioToolbox.framework */,
+				5DC4E44E1BD6E5F600C843D2 /* CFNetwork.framework */,
+				5DC4E44C1BD6E5E000C843D2 /* watsonsdk.framework */,
 				A58B424CDEDF0416CD096C33 /* libPods-WatsonSpeechQA.a */,
 			);
 			name = Frameworks;
@@ -284,9 +328,11 @@
 				5D89DC0E1B5DD6580048DED1 /* microphone-inactive.png in Resources */,
 				5D89DC091B5DD5BF0048DED1 /* icon-152.png in Resources */,
 				5D89DC061B5DD5BF0048DED1 /* icon-60.png in Resources */,
+				5DC4E4451BCEB8CD00C843D2 /* Images.xcassets in Resources */,
 				5D89DC101B5DD6580048DED1 /* microphone.png in Resources */,
 				5D89DC0F1B5DD6580048DED1 /* microphone-white.png in Resources */,
 				5D89DC071B5DD5BF0048DED1 /* icon-90.png in Resources */,
+				5DC4E4431BCEB8C300C843D2 /* icon-76.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,8 +518,34 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = WatsonSpeechQA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"CDTDatastore\"",
+					"-l\"CocoaLumberjack\"",
+					"-l\"FMDB\"",
+					"-l\"IMFURLProtocol\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++.6\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CloudantToolkit\"",
+					"-framework",
+					"\"IMFCore\"",
+					"-framework",
+					"\"IMFData\"",
+					"-framework",
+					"\"IMFPush\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -484,8 +556,34 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = WatsonSpeechQA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"CDTDatastore\"",
+					"-l\"CocoaLumberjack\"",
+					"-l\"FMDB\"",
+					"-l\"IMFURLProtocol\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++.6\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CloudantToolkit\"",
+					"-framework",
+					"\"IMFCore\"",
+					"-framework",
+					"\"IMFData\"",
+					"-framework",
+					"\"IMFPush\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

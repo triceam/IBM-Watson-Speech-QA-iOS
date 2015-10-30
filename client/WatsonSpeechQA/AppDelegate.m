@@ -20,7 +20,7 @@
     NSString *route = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"Backend_Route"];
     NSString *guid = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"Backend_GUID"];
     
-    //[self resetKeychain];
+    [self resetKeychain];
     
     IMFClient *imfClient = [IMFClient sharedInstance];
     [imfClient initializeWithBackendRoute:route backendGUID:guid];
@@ -69,6 +69,9 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    [IMFLogger send];
+    [[IMFAnalytics sharedInstance] sendPersistedLogs];
 }
     
 - (void) verifyConnection {
@@ -88,6 +91,22 @@
         }
     }];
 
+}
+
+
+-(void)resetKeychain {
+    [self deleteAllKeysForSecClass:kSecClassGenericPassword];
+    [self deleteAllKeysForSecClass:kSecClassInternetPassword];
+    [self deleteAllKeysForSecClass:kSecClassCertificate];
+    [self deleteAllKeysForSecClass:kSecClassKey];
+    [self deleteAllKeysForSecClass:kSecClassIdentity];
+}
+
+-(void)deleteAllKeysForSecClass:(CFTypeRef)secClass {
+    NSMutableDictionary* dict = [NSMutableDictionary dictionary];
+    [dict setObject:(__bridge id)secClass forKey:(__bridge id)kSecClass];
+    OSStatus result = SecItemDelete((__bridge CFDictionaryRef) dict);
+    NSAssert(result == noErr || result == errSecItemNotFound, @"Error deleting keychain data (%ld)", result);
 }
 
 @end
