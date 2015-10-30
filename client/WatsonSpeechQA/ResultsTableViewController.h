@@ -11,6 +11,7 @@
 @interface ResultsTableViewController : UITableViewController
 
 
+@property (nonatomic, weak) NSString *query;
 @property (nonatomic, weak) NSArray *data;
 
 @end
