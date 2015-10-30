@@ -35,7 +35,7 @@ The mobile application connects to the [Mobile Client Access][ama_url] service t
 
 The app communicates to the [Speech to Text][watson_stt_url] and [Question &amp; Answer][watson_qa_url] servies through the Node.js middelware tier.  
 
-For the Speech To Text service, the app records audio from the local device, and sends a WAV file to the Node.js in a HTTP post request.  The Node.js tier then delegates to the Speech To Text service to provide transcription capabilities.  The Node.js tier then formats the respons JSON object and returns the query to the mobile app.  
+For the Speech To Text interaction, the app streams audio from the local device to the Watson Speech To Text Service using the [Watson Speech iOS SDK][watson_ios_sdk].  
 
 For the QA service, the app makes an HTTP GET request (containing the query string) to the Node.js server, which delegates to the Watson QA natural language processing service to return search results. The Node.js tier then formats the respons JSON object and returns the query to the mobile app. 
 
