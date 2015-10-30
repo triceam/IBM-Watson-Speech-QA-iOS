@@ -32,35 +32,40 @@ require("cf-deployment-tracker-client").track();
 // setup express
 require('./config/express')(app);
  
-// if you're running locally (not on bluemix) set your auth credentials
-// if you're on bluemix, pull auth credentials from VCAP environment
-var qa_credentials = {
-    username:'qa username',
-    password:'qa password'
-};
-var stt_credentials = {
-    username:'stt username',
-    password:'stt password'
-};
+
+// Setup credentials - populate the url, username and password.
+// if you're running on a local node.js environment
+
+
+var QA_CREDENTIALS;
+var STT_CREDENTIALS;
 
 if (process.env.hasOwnProperty("VCAP_SERVICES")) {
-    // Running on Bluemix. Parse out the port and host that we've been assigned.
     var env = JSON.parse(process.env.VCAP_SERVICES);
-    var host = process.env.VCAP_APP_HOST; 
-    var port = process.env.VCAP_APP_PORT;
-   
-    qa_credentials = env['question_and_answer'][0].credentials;  
-    stt_credentials = env['speech_to_text'][0].credentials;  
+	QA_CREDENTIALS = env['question_and_answer'][0].credentials;
+	STT_CREDENTIALS = env['speech_to_text'][0].credentials;
+}
+else {
+	//only needed if running Node.js locally
+	QA_CREDENTIALS = {
+		username: '926f5992-4fec-499f-8de9-39f2ddb11061',
+		password: 'dEgNRtTBpMl0'
+	};
+
+	STT_CREDENTIALS = {
+		username: '9807f10f-b609-4f43-8e8e-3ea768aa1a0a',
+		password: 'nuXACmHk2iFg'
+	};
 }
 
-qa_credentials.version = 'v1';
-qa_credentials.dataset = 'healthcare';
-stt_credentials.version = 'v1';
+QA_CREDENTIALS.version = "v1";
+QA_CREDENTIALS.dataset = "healthcare";
 
+STT_CREDENTIALS.version = "v1";
 
 // setup watson services
-var question_and_answer_healthcare = watson.question_and_answer(qa_credentials);
-var speechToText = watson.speech_to_text(stt_credentials);
+var question_and_answer_healthcare = watson.question_and_answer(QA_CREDENTIALS);
+var speechToText = watson.speech_to_text(STT_CREDENTIALS);
 
 // render index page
 app.get('/', function(req, res){

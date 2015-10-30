@@ -6,8 +6,6 @@ target 'WatsonSpeechQA' do
 
 
 source 'https://github.com/CocoaPods/Specs.git'
-pod 'IMFGoogleAuthentication'
-pod 'IMFFacebookAuthentication'
 pod 'IMFPush'
 pod 'IMFData'
 pod 'IMFURLProtocol'

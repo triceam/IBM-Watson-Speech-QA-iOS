@@ -1,0 +1,13 @@
+---
+applications:
+- name: iOS-Ask-Watson-App
+  framework: node
+  runtime: node12
+  memory: 512M
+  instances: 1
+  host: ask-dr-watson-app
+  domain: mybluemix.net
+  services:
+  - askwatson-advanced-mobile-access
+  - askwatson-speech-to-text
+  - askwatson-qa

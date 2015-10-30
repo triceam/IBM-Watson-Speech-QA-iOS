@@ -1,0 +1,55 @@
+PODS:
+  - CDTDatastore (0.18.0):
+    - CDTDatastore/standard (= 0.18.0)
+  - CDTDatastore/common-dependencies (0.18.0):
+    - CDTDatastore/no-arc
+    - CocoaLumberjack (~> 2.0)
+  - CDTDatastore/no-arc (0.18.0)
+  - CDTDatastore/standard (0.18.0):
+    - CDTDatastore/common-dependencies
+    - FMDB (= 2.3)
+  - CloudantToolkit (1.2.0):
+    - CloudantToolkit/standard (= 1.2.0)
+  - CloudantToolkit/standard (1.2.0):
+    - CDTDatastore (~> 0.18.0)
+  - CocoaLumberjack (2.0.3):
+    - CocoaLumberjack/Default (= 2.0.3)
+    - CocoaLumberjack/Extensions (= 2.0.3)
+  - CocoaLumberjack/Core (2.0.3)
+  - CocoaLumberjack/Default (2.0.3):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.3):
+    - CocoaLumberjack/Default
+  - FMDB (2.3):
+    - FMDB/standard (= 2.3)
+  - FMDB/common (2.3)
+  - FMDB/standard (2.3):
+    - FMDB/common
+  - IMFCore (1.0.0)
+  - IMFData (1.2.0):
+    - IMFData/standard (= 1.2.0)
+  - IMFData/standard (1.2.0):
+    - CloudantToolkit (~> 1.2.0)
+    - IMFCore (~> 1.0.0)
+  - IMFPush (1.0.0):
+    - IMFCore (~> 1.0.0)
+  - IMFURLProtocol (1.0.0):
+    - IMFCore (~> 1.0.0)
+
+DEPENDENCIES:
+  - IMFCore
+  - IMFData
+  - IMFPush
+  - IMFURLProtocol
+
+SPEC CHECKSUMS:
+  CDTDatastore: b6e99912058cc904e954f882dca5ac7b1f328352
+  CloudantToolkit: 6584200939dbc38ce4f17b513208afaaf5d03da8
+  CocoaLumberjack: f58d8a19629f4d8379ae14bb3534def24161430e
+  FMDB: 773d79bb74226959b7e2286b1d6e0bd857c88915
+  IMFCore: 658ca8f27f1dade28abe6dcb263969d382a71da7
+  IMFData: 96f7c165de95dfda6095cce62b9ddb1fe964a690
+  IMFPush: 40412a5cc2b4cd9e6db9034d58d0eaa16f0d0f58
+  IMFURLProtocol: fd2897e8208aa24a03197fa6465e44ab346707f4
+
+COCOAPODS: 0.38.2

@@ -1,5 +1,5 @@
 # IBM Watson Speech QA for iOS
-"IBM Watson Speech QA for iOS" is a native iOS app that creates a voice driven app experience using the [Speech to Text][watson_stt_url] and [Question &amp; Answer][watson_qa_url] services, with operational analytics powered by the [Advanced Mobile Access][ama_url] service on [IBM Bluemix][bluemix_signup_url]. The native iOS app allows you to ask Watson questions in spoken language, and receive textual responses based on the [Watson QA Healthcare data set][watson_healthcare_url].
+"IBM Watson Speech QA for iOS" is a native iOS app that creates a voice driven app experience using the [Speech to Text][watson_stt_url] and [Question &amp; Answer][watson_qa_url] services, with operational analytics powered by the [Mobile Client Access][ama_url] service on [IBM Bluemix][bluemix_signup_url]. The native iOS app allows you to ask Watson questions in spoken language, and receive textual responses based on the [Watson QA Healthcare data set][watson_healthcare_url].
 
 This app is meant to serve as a demo to showcase how you could integrate IBM Watson, IBM Bluemix, or IBM MobileFirst solutions into your mobile applications.
 
@@ -9,11 +9,19 @@ You can see a preview of this app in action and a brieft walkthrough of the code
 
 [<img src="./github_content/video.jpg" width="100%">][youtube_video_snip_url]<br/>
 
+---
 
+### Recent Changes
+
+#### 10/30/15
+1. Update to use Watson Developer Cloud Speech SDK for iOS for streaming audio to Speech to Text Service
+2. Updated instructions to use new/renamed Mobile Client Access service
+
+---
 
 ### Bluemix Services Used
 
-1. [Advanced Mobile Access][ama_url] - Capture analytics and logs from mobile apps running on devices
+1. [Mobile Client Access][ama_url] - Capture analytics and logs from mobile apps running on devices
 2. [Speech to Text][watson_stt_url] - Convert spoken audio into text
 3. [Question &amp; Answer][watson_qa_url] - Natural language search 
 
@@ -23,7 +31,7 @@ This an architectural overview of the components that make this app run.
 
 <img src="./github_content/architecture.jpg" width="100%">
 	
-The mobile application connects to the [Advanced Mobile Access][ama_url] service to provide operational analytics (usage, devices, network utilization) and remote log collection from the client app on the mobile devices.
+The mobile application connects to the [Mobile Client Access][ama_url] service to provide operational analytics (usage, devices, network utilization) and remote log collection from the client app on the mobile devices.
 
 The app communicates to the [Speech to Text][watson_stt_url] and [Question &amp; Answer][watson_qa_url] servies through the Node.js middelware tier.  
 
@@ -93,7 +101,7 @@ There are two ways that you can configure the back-end Bluemix application.  You
   $ cf login
   ```
 
-7. Create the Advanced Mobile Access, Watson QA, and Speech To Text services on Bluemix.
+7. Create the Mobile Client Access, Watson QA, and Speech To Text services on Bluemix.
 
   ```
   $ cf create-service AdvancedMobileAccess Bronze askwatson-advanced-mobile-access
@@ -107,21 +115,7 @@ There are two ways that you can configure the back-end Bluemix application.  You
   $ cf push
   ```
   
-9. Voila! You now have your very own instance up and running on Bluemix.  Next we need to configure the Advanced Mobile Access service.  Skip over the Web GUI secion and proceed to "Configuring Advanced Mobile Access".
-
-10. Go to your [Bluemix Dashboard][bluemix_dashboard_url], and then open your app's dashboard. From the app's dashboard, click on the "**Advanced Mobile Access**" service.  
-
-11. You will be presented with a "Client Registration" screen.  *Take note of the "**Route**" and "**UID**" values.  You will need these when configuring the Xcode project.*
-
-12. Click on the "**NEW MOBILE CLIENT**" button.
-
-13. Enter a descriptive name for your client configuration. You can use the value "iOS-Client", and click on the "**Next**" button.
-
-14. You will now be presented with for instructions for setting up a new Xcode project.  Since we are configuring an existing Xcode project we only need to follow a few of the steps.  Jump to section 2: "Configure" and enter the Bundle ID that will be used in your app.  This will be the unique bundle identifier used within your Xcode project, and used by the app store to identify your app. 
-
-15. Scroll down to section 4: "Register", and click on the "**Register**" button.
-
-16. The back end services are now ready to connect your mobile app.  Let's move on to configuring the client-side Xcode project.
+9. Voila! You now have your very own instance up and running on Bluemix.  Next we need to configure the Mobile Client application.
 
 ### Setting Up The Mobile App
 
@@ -139,21 +133,27 @@ The native iOS application requires Xcode running on a Mac to compile and deploy
 
 4. This will create an Xcode Workspace file.  Open the **DrWatson.xcworkspace** file in Xcode.
 
-5. Open the "**Info.plist**" file.  You need to enter the Bundle Identifier, Backend_Route, and Backend_GUID values from the **Configuring Advanced Mobile Access** steps above. 
+5. Open the "**Info.plist**" file.  You need to enter the Bundle Identifier, Backend_Route, and Backend_GUID values that can be obtained from your [Bluemix Dashboard][bluemix_dashboard_url].  Just click on the "Mobile Options" link when viewing the application's dashboard. 
 
-   * **Bundle Identifier** - You need to set the Bundle Indentifier value to match the bundle ID specified when configuring Advanced Mobile Access. 
+    <img src="./github_content/mobile-options.jpg" width="100%">
+    
+   * **Bundle Identifier** - You need to set the Bundle Indentifier value to match the bundle ID specified when configuring Mobile Client Access. 
      
      *This is case-sensitive, and MUST exactly match the bundle ID entered in earlier steps.*
-   * **Backend_Route** - This is the application route for your Bluemix AMA app.  You can see this value under Advanced Mobile Access - Client Registration.
-   * **Backend_GUID** - This is the application UID for your Bluemix AMA app.  You can see this value under Advanced Mobile Access - Client Registration.
+   * **Backend_Route** - This is the application route for your Bluemix AMA app.  You can see this value under Mobile Client Access - Client Registration.
+   * **Backend_GUID** - This is the application UID for your Bluemix AMA app.  You can see this value under Mobile Client Access - Client Registration.
    
     <img src="./github_content/Xcode.jpg" width="100%">
 
-6. Now you are all set!  Launch the app either on a device or in the iOS Simulator using Xcode.  Tap on the Microphone button and [start asking questions][demo_app_route].  
+6. Download the [Watson Speech iOS SDK][watson_ios_sdk] and extract the contents of the watsonsdk.framework.zip file.  Copy the extracted watsonsdk.framework into the Xcode project's "Frameworks" directory.
+
+7. Open the ViewController.m file and update lines 36 and 37 to use authentication credentials for your Watson Speech To Text service (these can be found by expanding the "Show Credentials" link on the Speech To Text service on the application's dashboard on Bluemix) 
+
+8. Now you are all set!  Launch the app either on a device or in the iOS Simulator using Xcode.  Tap on the Microphone button and [start asking questions][demo_app_route].  
 
     <img src="./github_content/app.jpg" >
     
-   Once your app is running, you should see the message "You have connected to Bluemix successfully" in the Xcode console.  If you see error messages instead, please double check your bundle ID, app route, and app UID in both the Advanced Mobile Access service on Bluemix and in the Xcode project. These values are case sensitive and must be identical. 
+   Once your app is running, you should see the message "You have connected to Bluemix successfully" in the Xcode console.  If you see error messages instead, please double check your bundle ID, app route, and app UID in both the Mobile Client Access service on Bluemix and in the Xcode project. These values are case sensitive and must be identical. 
    
 <br/><br/>
 
@@ -236,3 +236,4 @@ Deployment tracking can be disabled by removing `require("cf-deployment-tracker-
 [youtube_video_url]: http://www.youtube.com/watch?v=0kedhwC3ikY
 [youtube_video_snip_url]: https://ibm.biz/BdXh3E
 [data_coropora_url]: http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/qaapi/#corpora
+[watson_ios_sdk]: https://github.com/watson-developer-cloud/speech-ios-sdk
