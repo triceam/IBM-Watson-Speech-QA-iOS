@@ -140,8 +140,8 @@ The native iOS application requires Xcode running on a Mac to compile and deploy
    * **Bundle Identifier** - You need to set the Bundle Indentifier value to match the bundle ID specified when configuring Mobile Client Access. 
      
      *This is case-sensitive, and MUST exactly match the bundle ID entered in earlier steps.*
-   * **Backend_Route** - This is the application route for your Bluemix AMA app.  You can see this value under Mobile Client Access - Client Registration.
-   * **Backend_GUID** - This is the application UID for your Bluemix AMA app.  You can see this value under Mobile Client Access - Client Registration.
+   * **Backend_Route** - This is the application route for your Bluemix MCA app.  You can see this value under Mobile Options.
+   * **Backend_GUID** - This is the application UID for your Bluemix MCA app.  You can see this value under Mobile Options.
    
     <img src="./github_content/Xcode.jpg" width="100%">
 
